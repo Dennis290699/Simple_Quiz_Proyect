@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../assets/images/wallpaperflare.com_wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.app {
+    background: #ffffffd0;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.app h1 {
+    font-weight: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding: 30px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+.btn {
+    background: transparent;
+    color: #222;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px 25px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+.correct{
+    background: #9aeabc;
+}
+
+.incorrect{
+    background: #ff9393;
+}
+
+#next-btn, #reset-btn {
+    background: #5e88cb;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#next-btn:hover, #reset-btn:hover {
+    background: #4470ce;
+    transform: scale(1.1);
+}
